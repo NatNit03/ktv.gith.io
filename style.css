@@ -1,0 +1,143 @@
+body {
+  font-family: "Khmer OS Siemreap", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: white;
+  box-sizing: border-box;
+}
+
+/* Header Design */
+header {
+  background: linear-gradient(45deg, #ff6600, #ff9900);
+  padding: 8px 8px; /* តូចជាងមុន */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-bottom-left-radius: 8px; /* កុំអោយជ្រុងមូលខ្លាំងពេក */
+  border-bottom-right-radius: 8px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+header h1 {
+  color: white;
+  font-size: 48px;
+  margin: 0;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  word-break: break-word;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  background: #333;
+  padding: 10px 30px;
+  border-radius: 40px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+}
+
+.back-link:hover {
+  background: #000;
+  transform: scale(1.1);
+}
+
+/* Menu Container */
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: #fffdf9;
+}
+.menu-item {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-item p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Menu Item */
+.menu-item {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 15px;
+  transition: 0.4s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.menu-item:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  transition: 0.3s ease;
+}
+
+.menu-item h3 {
+  font-size: 24px;
+  color: #222;
+  margin: 8px 0;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.menu-item p {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 0;
+  word-break: break-word;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 32px;
+  }
+  .back-link {
+    font-size: 18px;
+    padding: 8px 20px;
+  }
+  .menu-item h3 {
+    font-size: 22px;
+  }
+  .menu-item p {
+    font-size: 20px;
+  }
+}
